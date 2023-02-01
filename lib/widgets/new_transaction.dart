@@ -10,7 +10,6 @@ class NewTransaction extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      elevation: 5,
       child: Container(
         padding: EdgeInsets.all(10),
         child: Column(
@@ -26,19 +25,21 @@ class NewTransaction extends StatelessWidget {
             TextField(
               decoration: InputDecoration(labelText: 'Amount'),
               controller: amountController,
-              // onChanged: (val) => amountInput = val,
+              // onChanged: (val) {
+              //   amountInput = val;
+              // },
             ),
-            TextButton(
-              child: Text('Add Transaction'),
+            ElevatedButton(
+              child: Text(
+                'Add Transaction!',
+              ),
               style: ButtonStyle(
-                foregroundColor: MaterialStateProperty.all(
-                    Color.fromARGB(255, 223, 15, 160)),
+                backgroundColor: MaterialStateProperty.all(
+                    Color.fromARGB(255, 224, 13, 196)),
               ),
               onPressed: () {
                 addTx(
-                  titleController.text,
-                  double.parse(amountController.text),
-                );
+                    titleController.text, double.parse(amountController.text));
               },
             ),
           ],
