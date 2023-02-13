@@ -50,6 +50,18 @@ class _NewTransactionState extends State<NewTransaction> {
               //   amountInput = val;
               // },
             ),
+            Container(
+              height: 70,
+              child: Row(
+                children: <Widget>[
+                  Text('No Date Chosen!'),
+                  ElevatedButton(
+                    onPressed: () {},
+                    child: Text('Choose Date'),
+                  )
+                ],
+              ),
+            ),
             ElevatedButton(
               child: Text(
                 'Add Transaction!',

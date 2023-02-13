@@ -14,10 +14,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
           fontFamily: 'OpenSans',
           textTheme: ThemeData.light().textTheme.copyWith(
-              titleMedium: TextStyle(
-                  fontFamily: 'Quicksand',
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold)),
+                titleMedium: TextStyle(
+                    fontFamily: 'Quicksand',
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold),
+              ),
           appBarTheme: AppBarTheme(
               titleTextStyle: TextStyle(
             fontFamily: 'QuickSand',
