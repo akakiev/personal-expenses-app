@@ -12,8 +12,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Personal Expenses',
       theme: ThemeData(
-          primarySwatch: Colors.lightBlue,
-          accentColor: Colors.amber,
           fontFamily: 'OpenSans',
           textTheme: ThemeData.light().textTheme.copyWith(
               titleMedium: TextStyle(
@@ -25,7 +23,9 @@ class MyApp extends StatelessWidget {
             fontFamily: 'QuickSand',
             fontSize: 25,
             fontWeight: FontWeight.bold,
-          ))),
+          )),
+          colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.lightBlue)
+              .copyWith(secondary: Colors.amber)),
       home: MyHomePage(),
     );
   }
