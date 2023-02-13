@@ -1,4 +1,4 @@
-# personal_expenses_app
+# Personal Expenses App
 
 Our personal expense tracker, where we can add new expenses, where we can choose the date we made those expenses, and we also have a chat at the top of the app that changes dynamically and shows all our expenses for the last seven days.
 
